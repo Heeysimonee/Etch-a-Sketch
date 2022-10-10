@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Ms+Madi&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.title{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dadada;
+}
+h1{
+    font-size: 40px;
+}
+.container{
+    height: 90vh;
+    background-color: #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+.buttons{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttons button{
+    width: 200px;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 10px;
+    border: 1px solid #2b2b2b;
+    cursor: pointer;
+}
+.board-cnt{
+    display: flex;
+    flex:3;
+}
+.board{
+    height: 600px;
+    width: 600px;
+    border: 2px solid #2b2b2b;
+    display: grid;
+    margin: 0 5%;
+    margin-left: 10%;
+}
+.board-square{
+    user-select: none;
+}
+.info{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2% 0;
+}
+input{
+    margin: 2% 2%;
+}
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;  
+    background: #474747;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin: 5% 0;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: #ff552b;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff552b;
+    cursor: pointer;
+    border: none;
+  }
